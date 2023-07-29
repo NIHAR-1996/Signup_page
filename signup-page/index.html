@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+       <form action="" class="sign-up">
+       <header>
+        <small>Welcome back! 👋</small>
+        <h1>Sign up to your account</h1>
+       </header>
+       <label for="name">Your Name</label> <br>
+       <input type="text" id="name" required>
+       <br>
+       <label for="email">Your Email</label><br>
+       <input type="email" id="email" required>
+       <br>
+       <label for="password">Password</label><br>
+       <input type="password" id="password" required>
+       <br>
+       <label for="c.password">Confirm password</label><br>
+       <input type="password" id="c.password" required>
+       <br>
+       <button type="submit" class="login-button" id="signup-button">Continue</button>
+       <br>
+       <h3 id="error-message" style="display: none;">Error:All fields are mandatory! </h3>
+       </form>
+       <small id="signup-redirect"> Dont have an Account? <a href="#">Sign-up</a></small>
+    </div>
+    <div class="bisect">
+        <span class="sec-border left"></span>
+        <span class="sec-border right"></span>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

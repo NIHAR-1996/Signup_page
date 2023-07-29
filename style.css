@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: aliceblue; */
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Mulish',sans-serif;
+    font-size: 1 rem;
+}
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.bisect{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    background-color: #F8FAFC;
+    transform: skewY(15deg);
+    top: -50%;
+}
+.sec-border{
+    z-index: 10;
+    width: 30%;
+    height: 5px;
+    position: absolute;
+    background-color: #5BF7DB;
+    bottom: 0%;
+}
+.sec-border.left{
+    left: 1%;
+}
+.sec-border.right{
+    right: 1%;
+}
+.sign-up{
+    position: absolute;
+    width: 400px;
+    height: 480px;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    background-color: #FFFFFF;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.19);
+    padding: 2rem;
+
+}
+.sign-up small{
+    color:#757575;
+    font-size: 0.8rem;
+
+}
+.sign-up h1{
+    font-style: 'Mulish';
+    font-weight: 700;
+    
+}
+.sign-up label{
+    font-style: 'Mulish';
+    color: #333333;
+    margin: 0.5rem 0;
+
+}
+.sign-up input{
+    width: 90%;
+    gap: 10px;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 6px;
+}
+.login-button{
+    width: 90%;
+    background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+    border-radius: 5px;
+    height: 50px;
+    margin: 0.5rem 0;
+    border: #625BF7;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 18px;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+
+}
+#logout{
+    margin:-0.5rem 0 !important;
+
+}
+#error-message{
+    text-align: center;
+    color: #463EEA;
+    font-style: 'Mulish';
+    font-weight: 600;
+    margin-top: 2rem;
+
+}
+#signup-redirect{
+    position: absolute;
+    bottom: 2%;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #333333;
+}
+#signup-redirect a{
+    text-decoration: none;
+    color: #463EEA;
+    font-weight: 400;
+
+}
+#success-msg{
+    position: absolute;
+    font-size: 2rem;
+    color: #625BF7;
+    font-weight: 700;
+    top: 10%;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.profile{
+    position: absolute;
+    z-index: 5;
+    background-color: #FFFFFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.19);
+    width: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+.profile h1{
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.profile img{
+    height: 80px;
+    width: 80px;
+    margin: 1rem;
+    left: 20px;
+}
+#profile-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+@media only screen and (max-width: 600px){
+    .profile{
+        width: 250px;
+    }
+    .bisect{
+        transform: skewY(40deg);
+    }
+    .profile h1{
+        font-size: 1.5rem;
+    }
+    .sign-up{
+        width: 250px;
+    }
+    .sign-up input{
+        height: 30px;
+    }
+    .sign-up label{
+        font-size: 0.6rem;
+    }
+    #error-message{
+        font-size: 0.8rem;
+        bottom: 5%;
+    }
+    #signup-redirect{
+        bottom:3%;
+    }
+    #success-message{
+        top:20%;
+    }
+}
